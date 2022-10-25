@@ -1,0 +1,152 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Struct.website</title>
+</head>
+
+<style type="text/css">
+  .frac {
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    letter-spacing: 0.001em;
+    text-align: center;
+}
+.frac > span {
+    display: block;
+    padding: 0.1em;
+}
+.frac span.bottom {
+    border-top: thin solid black;
+}
+.frac span.symbol {
+    display: none;
+} 
+</style>
+<body>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="https://www.struct.website/">Struct.Website</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="http://127.0.0.1:8000/">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="http://127.0.0.1:8000/aboutme">About me</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="http://127.0.0.1:8000/contact">Contact</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+
+<div class="container" my-4>
+  <h3>Bolt calculation</h3>
+  <h3></h3></div>
+<hr>
+
+<br>
+<br>
+
+
+<form action="bolt" class="container">
+<div class="form-group row">
+      <label for="bolt_dia" class="col-sm-12 col-md-3 col-form-label h3" aria-describedby="bolt_dia">Bolt diameter in mm</label>
+  <div class="col-sm-12 col-md-2">
+    <select id="bolt_dia" name="bolt_dia" class="form-control">
+        <option>M4</option>
+        <option>M5</option>
+        <option>M6</option>
+        <option>M8</option>
+        <option>M10</option>
+        <option>M12</option>
+        <option>M14</option>
+        <option>M16</option>
+        <option>M18</option>
+        <option>M20</option>
+        <option>M22</option>
+        <option>M24</option>
+        <option>M27</option>
+        <option>M30</option>
+      </select> 
+    </div>
+  </div>
+
+<br>
+<div class="container">
+<label class="h3">Unfactored Loading</label>
+</div>
+<br>
+<div>
+<label class="col-sm-3 col-form-label h3">F<sub>x</sub></label>
+<input type="text" name="num2" id="num2">
+</div>
+<div>
+<label class="col-sm-3 col-form-label h3">F<sub>y</sub></label>
+<input type="text" name="num3" id="num3">
+</div>
+<div>
+<label class="col-sm-3 col-form-label h3">F<sub>z</sub></label>
+<input type="text" name="num4" id="num4">
+</div>
+<br>
+
+<div class="container" my-10>
+<label class="col-sm-3 col-form-label">Pitch distance</label>
+<input type="text" name="num5" id="num5">
+</div>
+
+<br>
+
+<div class="container" my-10>
+    <label class="col-sm-3 col-form-label">Edge distance</label>
+          <input class="col-sm-1" type="text" name="num6" id="num6">
+</div>
+<div class="container" my-2>
+
+
+      <input type="submit" size="50"/>
+    </a>
+
+  </div>
+  <br>
+<br>
+
+
+<div class="frac">
+    <span>1</span>
+    <span class="symbol">/</span>
+    <span class="bottom">2</span>
+    
+</div>
+
+<div class="container" my-2>
+<a href="http://127.0.0.1:8000/bolt_pdf" target="_blank">Click here for the PDF of {{ fruits }}.</a>
+</div>
+</form>
+ 
+
+</body>
+</html>
